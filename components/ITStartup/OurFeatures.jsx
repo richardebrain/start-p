@@ -4,7 +4,7 @@ import * as Icon from 'react-feather';
 
 const OurFeatures = () => {
     return (
-        <div className="features-area pt-80 pb-50 bg-f7fafd">
+        <div className="features-area pt-20 pb-[50px] bg-[#f7fafd]">
             <div className="container">
                 <div className="section-title">
                     <h2>Our Features</h2>
@@ -43,7 +43,7 @@ const OurFeatures = () => {
 
                     <div className="col-lg-6 col-md-6">
                         <div className="single-features">
-                            <div className="icon bg-c679e3">
+                            <div className="icon bg-[#c679e3]">
                                 <Icon.Grid />
                             </div>
                             <h3>
@@ -57,7 +57,7 @@ const OurFeatures = () => {
 
                     <div className="col-lg-6 col-md-6">
                         <div className="single-features">
-                            <div className="icon bg-c679e3">
+                            <div className="icon bg-[#c679e3]">
                                 <Icon.Info />
                             </div>
                             <h3>
@@ -71,7 +71,7 @@ const OurFeatures = () => {
 
                     <div className="col-lg-6 col-md-6">
                         <div className="single-features">
-                            <div className="icon bg-eb6b3d">
+                            <div className="icon bg-[#eb6b3d]">
                                 <Icon.Box />
                             </div>
                             <h3>
@@ -85,7 +85,7 @@ const OurFeatures = () => {
 
                     <div className="col-lg-6 col-md-6">
                         <div className="single-features">
-                            <div className="icon bg-eb6b3d">
+                            <div className="icon bg-[#eb6b3d]">
                                 <Icon.Bell />
                             </div>
                             <h3>

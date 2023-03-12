@@ -2,7 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply text-white bg-navlink-color shadow-md;
+  }
+  .btn {
+    @apply bg-blue-500 font-semibold text-[14px] py-[15px] px-10 relative rounded-[4px] z-[1] uppercase transition-all duration-[.3s] cursor-pointer align-middle text-center no-underline border border-solid border-transparent;
+  }
+  .btn-light {
+    @apply bg-white text-black border-white;
+  }
+  .row {
+    @apply flex flex-wrap -mx-4 -mt-1;
+  }
+  .single-box::before {
+    @apply absolute z-[-1] top-0 left-0 w-full h-full  opacity-0 duration-[.5s] invisible rounded-[5px] content-[''] bg-gradient-to-r from-[#23bdb8] to-[#43e794];
+  }
 
-*{
-    box-sizing: border-box;
+  .single-box:hover .icon {
+    @apply bg-white;
+  }
+  .single-box:hover h3 {
+    @apply text-white;
+  }
+  .single-box:hover p {
+    @apply text-white;
+  }
+  .container {
+    @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1250px] mx-auto px-3;
+  }
+  .bar {
+    @apply h-[5px]  w-[90px] bg-[#cdf1d8] my-5 rounded-[30px] relative mx-0;
+  }
+  .bar::before {
+    @apply absolute top-[-2.7px] left-0 h-[10px] w-[10px] rounded-[50%] bg-[#44ce6f] content-[''] animate-MOVEBG;
+  }
+  .box {
+    @apply relative pr-4 pl-[45px] z-[1] block py-[15px] text-paragraph-color font-medium bg-white duration-[.5s] shadow-md mt-[20px] text-sm;
+  }
+  .box::before {
+    @apply absolute top-0 left-0 h-full w-full opacity-0 invisible rounded-sm bg-gradient-to-r from-[#23bdb8] to-[#43e794] content-[''] duration-[.5s] z-[-1];
+  }
+  .box:hover::before {
+    @apply opacity-100 visible;
+  }
+  .box svg {
+    @apply mr-1 inline-block text-[#44ce6f] duration-[.5s] w-[18px] absolute left-[15px] top-[15px];
+  }
+  .box:hover svg {
+    @apply text-white;
+  }
+  .box:hover {
+    @apply !text-white -translate-y-[5px];
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  font-size: 14px;
+}
+svg {
+  display: inline;
 }
